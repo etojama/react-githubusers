@@ -1,0 +1,65 @@
+/* ::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.git {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem auto;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.git li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background: rgb(228, 225, 225);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 300px) {
+  div {
+    width: 75vw;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  div {
+    width: 90vw;
+  }
+}
